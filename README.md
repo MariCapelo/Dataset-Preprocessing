@@ -19,3 +19,13 @@ Os 14 atributos podem ser vistos abaixo:
 12. número de vasos principais (0-3) coloridos pela fluorosopia - **ca**
 13. thal: 0 = normal; 1 = fixed defect; 2 = reversable defect - **thal**
 
+O Dataset possui 1025 linhas, nenhum valor não nulo e é composto majoritariamente de valores inteiros (apenas um atributo é do tipo ponto flutuante).
+<br>
+
+![info geral do Dataset](img/image.png)
+<br>
+
+Em relação a coluna target, os valores são bem balnaceados, com 526 pessoas possuindo doenças cardíacas e 499 não possuindo.
+
+![Count coluna target](img/image2.png)
+
