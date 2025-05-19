@@ -54,25 +54,31 @@ Antes de fazer a análise individual dos atributos escolhidos, vale ser citado o
 
 ### Idade (Age)
 ![Age Statistic](img/image4.png)
+A idade é relativamente um atributo bem banceado, possui um bom intervalo de valores e uma frequência bem distribuida. 
 
 ### Pressão Arterial em Repouso (trestbps)
 ![trestbps Statistic](img/image6.png)
+Podemos perceber, pegando o menor e o maior valor desse atributo, que há um grande intervalo de valores possíveis. Ademais, com a análise dos quartis, é possível perceber que a maioria dos dados se concentram relativamente distantes do valor máximo, justificando o alto valor de dispersão dos dados. Provavelmente o gráfico boxplot desse atributo irá mostrar a caixa de maior concentração dos dados bem perto do eixo y, uma vez que fica bem perto do valor mínimo. Além disso, temos a grande possibilidade de valores outliers. 
 
 ### Colesterol Total em mg/dl (chol)
 ![chol Statistic](img/image7.png)
+Mesmo caso do atributo anterior. Esse é o que possui o maior intervalo dos atributos escolhidos e com a maioria dos dados se concentrando bem no começo desse intervalo, o que justifica o grande valor de dispersão e resulta em uma maior quantidade de outliers.
 
 ### Oldpeak (oldpeak)
 ![oldpeak Statistic](img/image8.png)
+Intervalo de valores curtinhos, porém com dados bem mal distribuídos analisando os quartis. A caixa estará colada no valor mínimo uma vez que a maior concentração de dados está entre o valor mínimo e 1,5.
 
 
 ## 3) Visualização e Detecção de Outliers
+- BoxPlot: se a caixa for muito pequena quer dizer que há uma grande concentração de dados em um intervalo de variação muito pequeno. O tamanho dos bigodes representa a variação de valores, se ele for longo há uma maior variação, se for curto há uma menor variação.
 ## 4) Análise de Redundância e Correlação
 ## 5) Desbalanceamento de Classes
 ## 6) Proposição de Questões
-### Analisando a partir de angina induzida por exercício (exang = 1)
 
-- [ ] Verificar primeiro quantas pessoas no geral que possuem exang 1 estão doentes e qual a faixa etária. Verificar a porcentagem.
-- [ ] Depois verificar qual o tipo de dor elas sentem durante esse exercicio, tanto para as pessoas doentes quanto para as não doentes 
+**1.** Qual a relação do colesterol total com doenças cardiacas (ou seja, target = 1)?
 
-### Algumas conclusões
-- Possivelmente há uma alta correlação do oldpeak e do target
+**2.** Qual a relação do entre a pressão arterial em repouso com um diagnóstico de doença cardíaca?
+
+**3.** Há alguma relação de altos valores de oldpeak e um diagnóstico de doença cardíaca?
+
+**4.** É possivel arfirmar que pessoas acima de 60 anos com colesterol alto têm mais tendencia a problemas de coração?
